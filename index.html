@@ -14,7 +14,7 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <script defer src="js/custom.js"></script>
-    <title>Gothic Unicorn</title>
+    <title>GESTOR MAS</title>
   </head>
   <body>
     <div id="inicio">
@@ -23,9 +23,9 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas offcanvas-end bg-custom" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Gothic Unicorn</h5>
+            <h5 class="offcanvas-title text-center" id="offcanvasDarkNavbarLabel">GESTOR MAS</h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
@@ -37,10 +37,10 @@
                 <a class="nav-link h5" href="#quienes">Quienes somos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link h5" href="#formulario">Nuestros servicios</a>
+                <a class="nav-link h5" href="#servicios">Nuestros servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link h5" href="#contacto">Precios</a>
+                <a class="nav-link h5" href="#precios">Precios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link h5" href="#contacto">Contáctanos</a>
@@ -62,7 +62,7 @@
       </div>
     </header>
   
-    <main id="quienes" class="container-fluid">
+    <main id="quienes" class="container-fluid reveal">
       <div class="border border-3 border-dark">
       <h1 class="text-center py-5">
         ¿Quienes <span>somos</span>?
@@ -87,13 +87,13 @@
         </div>
       </div>
       </div>
-        <h3 class="text-center mt-5"> Servicios para autónomos
+        <h3 id="servicios" class="text-center mt-5"> Servicios para autónomos
          </h3>
          <p class="text-center mt-3 mb-5"> En GESTOR MAS,
           tu información fiscal estará constantemente actualizada en función de tus ingresos y gastos, para que puedas prever 
          cuánto dinero tendrás que pagar de 
          impuestos cada trimestre</p>
-      <div class="container">
+      <div class="container reveal">
         <div class="row g-2 m-3">
         <div class="col-lg-6 col-md-6 col-sm-12 card cartaBorde">
             <h5 class="card-header text-center bg-custom text-white">Gestión a autónomos</h5>
@@ -169,25 +169,53 @@
             </div>
             <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
               <h2 class="h2 text-center pt-5 pb-3">Plan autónomo premium</h2>
-              <button type="button" class="btn bg-custom boton" data-bs-toggle="modal" data-bs-target="#hosteleria">
+              <button type="button" class="btn bg-custom boton" data-bs-toggle="modal" data-bs-target="#premium">
                   100€ al trimestre + IVA
                 </button>
-                  <div class="modal fade" id="hosteleria" tabindex="-1" aria-labelledby="hosteleria" aria-hidden="true">
+                  <div class="modal fade" id="premium" tabindex="-1" aria-labelledby="hosteleria" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content bg-color-custom">
+                      <div class="modal-content bg-custom text-white">
                         <div class="modal-header">
-                          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Hostelería</h1>
+                          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Características</h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p class="text-white">
-                            - Férreo trabajo en equipo. <br>
-                            - Liderazgo. Asignación de tareas y horarios a pequeños
-                            - equipos. <br>
-                            - Inventario, pedidos, cierre del día y recuento de caja. <br>
+                            <p>
+                              - Alta actividad hacienda. <br>
+                              - Alta autónomo Seg. Social</br>
+                              - Presentación modelos trimestrales y anuales AEAT (modelo 115, 130, 190, 347, 390, 303...) <br>
+                              - Asesoramiento contable y fiscal <br>
+                              - Atención telefónica <br>
+                              - Gestión documental <br>
                         </p>
-                        <p class="text-black bold">Sevilla</p>
-                        <p class="text-black bold">2018 - Actualidad</p>
+                  
+                            
+                        </div>
+                        <div class="modal-footer">
+                          <p>(Si tu facturación supera los 100.000€)</p>
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
+              <h2 class="h2 text-center pt-5 pb-3">Declaración de la renta</h2>
+              <button type="button" class="btn bg-custom boton" data-bs-toggle="modal" data-bs-target="#declaracion">
+                  50€ + IVA
+                </button>
+                  <div class="modal fade" id="declaracion" tabindex="-1" aria-labelledby="hosteleria" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content bg-custom text-white">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Características</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                              - Realizaremos la declaración de la renta por usted
+                        </p>
+                  
                             
                         </div>
                         <div class="modal-footer">
@@ -198,142 +226,39 @@
                   </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center align-items-center padding">
-            <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
-                <h2 class="h2 text-center text-white pt-5 pb-3">Actuación</h2>
-                <button type="button" class="botones" data-bs-toggle="modal" data-bs-target="#actor">
-                    VER EXPERIENCIA
-                  </button>
-                  <div class="modal fade" id="actor" tabindex="-1" aria-labelledby="actor" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content bg-color-custom">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Actuación</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="text-white">
-                                - Ensayos diarios con fuertes mecánicas de trabajo en
-                                grupo. <br>
-                                - Aprendizaje e interiorización de guiones. <br>
-                                - Gira de dos años por ciudades de toda Andalucía. <br>
-                                
-                            </p>
-                            <p class="text-black bold">Jerez de la Frontera</p>
-                            <p class="text-black bold">2013 - 2015</p>
-                                
-                            
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
-                <h2 class="h2 text-center text-white pt-5 pb-3">Call center</h2>
-                <button type="button" class="botones" data-bs-toggle="modal" data-bs-target="#callcenter">
-                    VER EXPERIENCIA
-                  </button>
-                  <div class="modal fade" id="callcenter" tabindex="-1" aria-labelledby="callcenter" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content bg-color-custom">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Call Center</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="text-white">
-                                - Emisión de llamadas con carácter comercial. <br>
-                                - Gestión de cuentas. <br>
-                                - Captación y fidelización. <br>
-                                - Uso de herramientas ofimáticas propias del puesto. <br>
-                                - Entrenamiento previo para la adaptación de los discursos con carácter comercial y en el uso de las herramientas propias del puesto de trabajo.
-                        <p class="text-black bold">Sevilla</p>
-                        <p class="text-black bold">En. 2017 - Mar. 2018</p>
-                            
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
+  
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="formulario" class="d-flex flex-column justify-content-center align-items-center formulario ">
+<div id="contacto" class="reveal container d-flex flex-column justify-content-center align-items-center mt-5">
   
-      <form class="row g-3 needs-validation container-fluid py-3 mt-5 bg-dark formulario mb-5" novalidate>
+      <form class="row rounded g-3 needs-validation container-fluid py-3 mt-5 bg-custom border border-3 border-dark mb-5">
         <div class="container">
-        <h2 class="text-white text-center mb-5">Mantente en contacto con nosotros y te mandaremos las ofertas más oscuras</h2>
+        <h2 class="text-white text-center mb-5 pt-2">¿Necesitas más información? Contacte con nosotros</h2>
       </div>
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-6 col-sm-12">
           <label for="validationCustom01" class="form-label text-white">Nombre</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Daniel" required>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Tu nombre" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
-        <div class="col-md-4 col-sm-12">
-          <label for="validationCustom02" class="form-label text-white">Apellidos</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Reyes Pérez" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
+    
+        <div class="col-md-6 col-sm-12">
           <label for="validationCustomUsername" class="form-label text-white">Email</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
             <div class="invalid-feedback">
               Por favor, introduzca un email válido
             </div>
           </div>
         </div>
-        <div class="col-md-8 col-sm-12">
-          <label for="validationCustom03" class="form-label text-white">Ciudad</label>
-          <input type="text" class="form-control" id="validationCustom03" required>
-          <div class="invalid-feedback">
-            Por favor, seleccione una ciudad válida
-          </div>
+        <div class="col-md-12 col-sm-12">
+         <div class="mb-3">
+           <label for="" class="form-label text-white">Escribe un mensaje</label>
+           <textarea class="form-control" name="" id="" rows="3" required></textarea>
+         </div>
         </div> 
-        <div class="col-md-3 col-sm-12">
-          <label for="validationCustom03" class="form-label text-white">CP</label>
-          <input type="text" class="form-control" id="validationCustom03" required>
-          <div class="invalid-feedback">
-            Por favor, seleccione una ciudad válida
-          </div>
-        </div>
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -346,19 +271,19 @@
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-primary goticColor" type="submit">Subscribete</button>
+          <button class="btn btn-dark" type="submit">Enviar</button>
         </div>
       </form>
       </div>
 
     </main>
-    <footer id="contacto" class="container p-4 rounded">
+    <footer id="contacto" class="container p-4 rounded reveal mb-5">
       <div class=" row d-lg-flex justify-content-between align-items-center">
         <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
-          <img class="w-50 justify-content-center align-items-center" src="img/logo.png" alt="logo">
+          <img class="w-50 justify-content-center align-items-center" src="img/logo_gestormas_1K.png" alt="logo">
         </div>
         <div class="col-lg-3 col-sm-12 copyright mt-2">
-          <p class="text-center">Gothic Unicorn. 2022. Ilerna Sevilla</p>
+          <p class="text-center">GESTOR MAS. Sevilla 2023 </p>
         </div>
         <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
           <ul class="d-flex gap-3 list-unstyled">
