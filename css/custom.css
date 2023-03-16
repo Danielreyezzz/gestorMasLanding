@@ -1,0 +1,35 @@
+:root {
+  --colorPrincipal: #006c78;
+}
+
+.bg-custom {
+  background-color: var(--colorPrincipal)!important;
+}
+.color-custom {
+  color: var(--colorPrincipal);
+}
+
+img {
+  max-width: 100%;
+}
+
+span {
+  color: var(--colorPrincipal);
+}
+
+.boton{
+    font-size: 2rem!important;
+    color: white!important;
+    border: 2px solid black!important;
+}
+
+a {
+  font-size: 1.1rem!important;
+}
+
+.imgCarrousel{
+    width: 50%!important;
+}
+.cartaBorde{
+    padding: 0!important;
+}
