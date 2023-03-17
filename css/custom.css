@@ -43,3 +43,15 @@ a {
     transform: translateY(0);
     opacity: 1;
   }
+
+li a:is(:link, :active, :visited){
+  color: white!important;
+}
+
+li a:is(:link, :active, :visited).active{
+ background-color: white;
+ color: black!important;
+ border-radius: 1em;
+ font-weight: bold!important;
+}
+

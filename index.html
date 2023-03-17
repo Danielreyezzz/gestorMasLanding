@@ -63,8 +63,8 @@
       </div>
     </header>
   
-    <main id="quienes" class="container-fluid reveal">
-      <div class="border border-3 border-dark">
+    <main  class="container-fluid reveal" data-bs-spy="scroll">
+      <div id="quienes" class="border border-3 border-dark">
       <h1 class="text-center py-5">
         ¿Quienes <span>somos</span>?
       </h1>
@@ -89,7 +89,7 @@
       </div>
       </div>
 
-      <div id="carouselExampleIndicators" class="reveal carousel carousel-dark slide my-5" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" class="reveal carousel carousel-dark slide my-5" data-bs-ride="carousel" data-bs-spy="scroll">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="d-flex justify-content-around align-items-center">
@@ -104,7 +104,7 @@
           </div>
        
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button id="servicios" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
@@ -113,13 +113,13 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-        <h3 id="servicios" class="text-center mt-5 pt.5"> Servicios para autónomos
+        <h3 class="text-center mt-5 pt.5" > Servicios para autónomos
          </h3>
          <p class="text-center mt-3 mb-5"> En GESTOR MAS,
           tu información fiscal estará constantemente actualizada en función de tus ingresos y gastos, para que puedas prever 
          cuánto dinero tendrás que pagar de 
          impuestos cada trimestre</p>
-      <div class="container reveal">
+      <div class="container reveal" data-bs-spy="scroll">
         <div class="row g-2 m-3">
         <div class="col-lg-6 col-md-6 col-sm-12 card cartaBorde">
             <h5 class="card-header text-center bg-custom text-white">Gestión a autónomos</h5>
@@ -150,7 +150,7 @@
               <br>  En el caso de que hubiera un problema con tus impuestos, nos hacemos plenamente responsables si el error es nuestro. Además, si recibes alguna notificación de Hacienda te ayudaremos a responder y que se solucione de la mejor manera.</p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 card cartaBorde">
+          <div id="precios" class="col-lg-6 col-md-6 col-sm-12 card cartaBorde" data-bs-spy="scroll">
             <h5 class="card-header text-center bg-custom text-white">Gestión laboral</h5>
             <div class="card-body d-flex border border-3 border-dark flex-column justify-content-center align-items-center">
               
@@ -160,7 +160,7 @@
           
         </div>
       </div>
-      <div id="precios" class="container rounded">
+      <div  class="container rounded" >
         <h3 class="h1 text-center pt-5 pb-3">Precios</h3>
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
@@ -255,9 +255,9 @@
   
     </div>
 
-<div id="contacto" class="reveal container d-flex flex-column justify-content-center align-items-center mt-5">
+<div id="contacto" class="reveal container d-flex flex-column justify-content-center align-items-center mt-5" data-bs-spy="scroll" >
   
-      <form class="row rounded g-3 needs-validation container-fluid py-3 mt-5 bg-custom border border-3 border-dark mb-5">
+      <form class="row rounded g-3 needs-validation container-fluid py-3 mt-5 bg-custom border border-3 border-dark mb-5" >
         <div class="container">
         <h2 class="text-white text-center mb-5 pt-2">¿Necesitas más información? Contacte con nosotros</h2>
       </div>
@@ -303,7 +303,7 @@
       </div>
 
     </main>
-    <footer id="contacto" class="container p-4 rounded reveal mb-5">
+    <footer class="container p-4 rounded reveal mb-5">
       <div class=" row d-lg-flex justify-content-between align-items-center">
         <div class="col-lg-3 col-sm-12 d-flex justify-content-center align-items-center">
           <img class="w-50 justify-content-center align-items-center" src="img/logo_gestormas_1K.png" alt="logo">
