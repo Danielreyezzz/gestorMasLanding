@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script defer src="js/bootstrap.bundle.js"></script>
+    <script defer src="alert/dist/sweetalert-dev.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap"rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"crossorigin="anonymous"/>
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
     <script defer src="js/custom.js"></script>
     <title>GESTOR MAS</title>
@@ -74,7 +72,7 @@
       <div class="container">
         <div class="row g-5 p-5 text-center">
           <div class="col-lg-6 col-sm-12">
-            <img class="rounded" src="img/auto1.jpg" alt="autonomo">
+            <img class="rounded ml-5" src="img/auto1.jpg" alt="autonomo">
           </div>
           <div class="col-lg-6 col-sm-12  d-flex flex-column justify-content-center align-items-center">
             <h5>Contamos con un equipo de gestores profesionales 
@@ -160,100 +158,65 @@
           
         </div>
       </div>
-      <div  class="container rounded" >
+      <div class="rounded reveal" >
         <h3 class="h1 text-center pt-5 pb-3">Precios</h3>
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
-                <h2 class="h2 text-center pt-5 pb-3">Plan autónomo</h2>
-                <button type="button" class="btn bg-custom boton" data-bs-toggle="modal" data-bs-target="#profesor">
-                    50€ al trimestre + IVA
-                  </button>
-                  <div class="modal fade" id="profesor" tabindex="-1" aria-labelledby="profesor" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content bg-custom">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Características</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body text-white">
-                            <p>
-                            - Alta actividad hacienda. <br>
-                            - Alta autónomo Seg. Social</br>
-                            - Presentación modelos trimestrales y anuales AEAT (modelo 115, 130, 190, 347, 390, 303...) <br>
-                            - Asesoramiento contable y fiscal <br>
-                            - Atención telefónica <br>
-                            - Gestión documental <br>
-                          </p>
-   
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
-              <h2 class="h2 text-center pt-5 pb-3">Plan autónomo premium</h2>
-              <button type="button" class="btn bg-custom boton" data-bs-toggle="modal" data-bs-target="#premium">
-                  100€ al trimestre + IVA
-                </button>
-                  <div class="modal fade" id="premium" tabindex="-1" aria-labelledby="hosteleria" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content bg-custom text-white">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Características</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>
-                              - Alta actividad hacienda. <br>
-                              - Alta autónomo Seg. Social</br>
-                              - Presentación modelos trimestrales y anuales AEAT (modelo 115, 130, 190, 347, 390, 303...) <br>
-                              - Asesoramiento contable y fiscal <br>
-                              - Atención telefónica <br>
-                              - Gestión documental <br>
+               
+                <div class="accordion accordion-flush container bg-custom" id="accordionFlushExample">
+                  <div class="accordion-item bg-white">
+                    <h2 class="accordion-header " id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h2 class="h2 text-center">Plan autónomo</h2>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <h5>50€al trimestre + IVA</h5>
+                        <p>
+                          - Alta actividad hacienda <br> 
+                          - Alta autónomo Seg. Social <br> 
+                          - Presentación modelos trimestrales y anuales AEAT (modelo 115, 130, 190, 347, 390, 303...) <br>
+                          - Asesoramiento contable y fiscal•Atención telefónica <br>
+                          - Gestión documental
                         </p>
-                  
-                            
-                        </div>
-                        <div class="modal-footer">
-                          <p>(Si tu facturación supera los 100.000€)</p>
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        </div>
                       </div>
                     </div>
                   </div>
-            </div>
-            <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
-              <h2 class="h2 text-center pt-5 pb-3">Declaración de la renta</h2>
-              <button type="button" class="btn bg-custom boton" data-bs-toggle="modal" data-bs-target="#declaracion">
-                  50€ + IVA
-                </button>
-                  <div class="modal fade" id="declaracion" tabindex="-1" aria-labelledby="hosteleria" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                      <div class="modal-content bg-custom text-white">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">Características</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>
-                              - Realizaremos la declaración de la renta por usted
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h2 class="h2 text-center">Plan autónomo <span>PREMIUM</span></h2>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <h5>100€al trimestre + IVA (Si tu facturación supera los 100.000€)</h5>
+                        <p>
+                          - Alta actividad hacienda <br> 
+                          - Alta autónomo Seg. Social <br> 
+                          - Presentación modelos trimestrales y anuales AEAT (modelo 115, 130, 190, 347, 390, 303...) <br>
+                          - Asesoramiento contable y fiscal•Atención telefónica <br>
+                          - Gestión documental
                         </p>
-                  
-                            
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        </div>
                       </div>
                     </div>
                   </div>
-            </div>
-        </div>
-  
-    </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h2 class="h2 text-center">Declaración de la renta</h2>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <h5>50€ + IVA</h5>
+                        <p>Realizamos la declaración de la renta por ti</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+           
+
+
 
 <div id="contacto" class="reveal container d-flex flex-column justify-content-center align-items-center mt-5" data-bs-spy="scroll" >
   
@@ -268,8 +231,14 @@
             Looks good!
           </div>
         </div>
-    
         <div class="col-md-6 col-sm-12">
+          <div class="form-outline">
+            <label class="form-label text-white" for="telefono">Teléfono (9 dígitos)</label>
+            <input type="tel" id="telefono" class="form-control" pattern="^\d{9}$" required/>
+          </div>
+        </div>
+    
+        <div class="col-md-12 col-sm-12">
           <label for="validationCustomUsername" class="form-label text-white">Email</label>
           <div class="input-group">
             <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -281,15 +250,15 @@
         </div>
         <div class="col-md-12 col-sm-12">
          <div class="mb-3">
-           <label for="" class="form-label text-white">Escribe un mensaje</label>
-           <textarea class="form-control" name="" id="" rows="3" required></textarea>
+           <label for="textarea" class="form-label text-white">Escribe un mensaje</label>
+           <textarea class="form-control" name="textarea" id="textarea" rows="3" required></textarea>
          </div>
         </div> 
         <div class="col-12">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
             <label class="form-check-label text-white" for="invalidCheck">
-              Acepto los terminos y condiciones
+              Acepto los <a href="#" onclick="JSalert()">terminos y condiciones</a> 
             </label>
             <div class="invalid-feedback">
               Debe aceptar los términos y condiciones
