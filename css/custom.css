@@ -65,5 +65,11 @@ li a:is(:link, :active, :visited).active{
 .m2{
   margin-bottom:  10rem!important;
 }
+.m3{
+  margin: 0!important;
+  padding: 0!important;
+}
 
-
+.font{
+  font-size: 0.9rem!important;
+}
