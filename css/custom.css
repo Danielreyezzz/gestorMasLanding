@@ -60,6 +60,10 @@ li a:is(:link, :active, :visited).active{
 }
 
 .m1{
-  margin-top:  5rem 0!important;
+  margin-top:  5rem!important;
 }
+.m2{
+  margin-bottom:  10rem!important;
+}
+
 
